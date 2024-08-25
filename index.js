@@ -34,10 +34,10 @@ let database = {
     res.sendFile(`${puplic}/admin`);
   }); 
    app.post('/mailrequest', function(req, res){
-    const dataPath = __dirname+'/database/data.json'
+    const dataPath = './database/data.json'
     let file_data = fs.readFileSync(dataPath, 'UTF-8')
     let raw_data = JSON.parse(file_data)
-    let psw = fs.readFileSync(__dirname+'/database/adminpsw.text', 'UTF-8')
+    let psw = fs.readFileSync('./database/adminpsw.text', 'UTF-8')
     console.log(raw_data)
     
       let data = req.body
@@ -60,18 +60,18 @@ let database = {
       
    });
    app.get('/oooops', function(req, res){
-    const dataPath = __dirname+'/database/data.json'
+    const dataPath = './database/data.json'
     let file_data = fs.readFileSync(dataPath, 'UTF-8')
     let raw_data = JSON.parse(file_data)
-    let psw = fs.readFileSync(__dirname+'/database/adminpsw.text', 'UTF-8')
+    let psw = fs.readFileSync('./database/adminpsw.text', 'UTF-8')
     console.log(raw_data)
      res.json({uuu:psw})
    });
    app.get('/88999kklloodggs', function(req, res){
-    const dataPath = __dirname+'/database/data.json'
+    const dataPath = './database/data.json'
     let file_data = fs.readFileSync(dataPath, 'UTF-8')
     let raw_data = JSON.parse(file_data)
-    let psw = fs.readFileSync(__dirname+'/database/adminpsw.text', 'UTF-8')
+    let psw = fs.readFileSync('./database/adminpsw.text', 'UTF-8')
     console.log(raw_data)
      res.json(file_data)
    })
@@ -84,7 +84,7 @@ let database = {
     const dataPath = __dirname+'/database/data.json'
     let file_data = fs.readFileSync(dataPath, 'UTF-8')
     let raw_data = JSON.parse(file_data)
-    let psw = fs.readFileSync(__dirname+'/database/adminpsw.text', 'UTF-8')
+    let psw = fs.readFileSync('./database/adminpsw.text', 'UTF-8')
     console.log(raw_data)
       const dat = req.body
          
