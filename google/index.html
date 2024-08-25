@@ -1,0 +1,77 @@
+<!DOCTYPE html >
+<html>
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width,      initial-scale=1.0">
+
+    <title></title>
+    
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">-->
+</head>
+<body>
+<div class="container">
+     <div class="logo"></div>
+</div>
+  <div class="singin">
+    Sign in
+  </div>
+   <div class="text"> to continue  to Gmail</div>
+
+    <div class="inputmail">
+  <div class=" addE"  id="lop">Email or phone  </div><br>
+        <input class="email"  id="input1" type= email placeholder=" Email or phone"  requried> </input>
+        <br> <span class="checkmail">Invalid Email</span>
+         <div class="fmail"> 
+         <a href="https://accounts.google.com/signin/v2/usernamerecovery?btmpl=mobile&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Fview&ddm=0&dsh=S1462328990%3A1722961202939409&emr=1&flowEntry=ServiceLogin&flowName=GlifWebSignIn&ifkv=AdF4I76b9B9gwd9Hb4qR04GKVJxwYN5RJmquQXT4H3UWMAtjw80A2kbCeUg4FiQF14CyYTdDRHTu2A&ltmpl=ecobx&osid=1&scc=1&service=mail"  class="fgl"> forgot email? </a>
+         </div>
+
+         <div class="info"> 
+               Not your computer? Use Guest mode to sign in privately. 
+                <a href="https://support.google.com/chrome/answer/6130773?hl=en "  class="fgl"> <b>Learn more about using Guest mode</b></a>
+
+          </div>
+        <div class="can"> 
+             <a href=""  class="fgl acc" >Create account </a>
+              <button class="next"> Next  </button>
+       </div>
+    </div>
+
+
+
+
+<script>
+        function focusInput() {
+            document.getElementById("input1").focus();
+             document.getElementById("lop").style.display ="block";
+         document.getElementById("input1").placeholder =" ";
+
+    const input = document.getElementById('input1');
+
+   // it will remove placeholder value on focus and store with dataset variable
+  input.addEventListener('focus', (e) => {
+    e.placeholder = '';
+  });
+        } 
+     
+    window.onload = function() {
+      focusInput()
+};
+/*const el = getElementById('input1')
+     setInterval(function () {
+
+    if  (el == document.activElement){
+	   alert(el === document.activeElement)
+	}else{
+	   document.getElementById("input1").placeholder ="Email or phone ";
+	    document.getElementById("lop").style.display ="none";
+	}
+	
+	}, 1000);*/
+	
+    </script>
+<script src="./js/script.js"></script>
+</body>
+</html>

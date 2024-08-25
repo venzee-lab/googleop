@@ -1,0 +1,219 @@
+* {
+    padding : 0;
+    margin : 0;
+}
+
+body {
+    background : white;
+    color : black;
+   
+}
+.container{
+    display:flex;
+          
+}
+.logo{
+	  background: url("./download.png");
+            width: 65px;
+            height: 80px;
+            background-repeat: no-repeat;
+        background-size: contain;
+            margin-left: 3%;
+            margin-top: 5%;
+            margin-right: 10%;
+            
+	}
+	.addp{
+	  position:absolute;
+	 background-color:white;
+	font-size:13px;
+	font-family: Arial, sans-serif;
+	margin-left:2.1%;
+	margin-top:7.5%;
+	padding:4px;
+	display:none;
+	color:#0066ff;
+	}
+	.addE{
+	position:absolute;
+	 background-color:white;
+	font-size:13px;
+	font-family: Arial, sans-serif;
+	margin-left:2.1%;
+	padding:4px;
+	margin-top:3.5%;
+	color:#0066ff;
+	display:none;
+	}
+.singin{
+	   margin-left: 6%;
+	   font-size:35px;
+	   font-family: Arial, sans-serif;
+	   
+        
+		}
+		.text{
+			  margin-left:6%;
+			margin-top:3%;
+			  font-size: 16px;
+			  font-family: Arial, sans-serif;
+			font-spacing:2px;
+			 
+			
+			}
+			
+			
+			.inputmail{
+				margin-top: 10%; 
+				 margin-left:6%;
+				width: 100%; 
+				
+				}
+				
+				.email, .password{
+					
+					width:86%;
+					padding: 17.5px;
+					box-sizing: border-box;
+					border: 1px solid grey; 
+					font-size:15.6px;
+					border-radius:5px;
+					}
+					.email::placeholder{
+						
+						font-size: 15.6px;
+						font-family:   Arial, sans-serif;
+						}
+	.passwoed::placeholder{
+						
+						font-size: 15.6px;
+						font-family:  Arial, sans-serif;
+						}
+						
+						.email:focus{
+						   outline: none;
+						padding: 16px 16px;
+					box-sizing: border-box;
+						   border: 2px solid #0066ff;
+						    font-size: 15.6px; 
+						border-radius: 5px;
+						}
+						
+							.password:focus{
+						   outline: none;
+						   border: 2px solid #0066ff;
+						padding: 16px 16px;
+					box-sizing: border-box;
+						    font-size: 15.6px; 
+						border-radius: 5px;
+						}
+						
+						.fmail{
+							  padding-top: 10px; 
+							color :#0000FF;
+							font-size:14px;
+							font-family: fantasy;
+							font-weight:bold;
+							}
+							
+							.fgl{
+								text-decoration: none;
+								color: #0066ff;
+								font-family: Arial, sans-serif;
+								}
+								.fgl:hover{
+									color: #0066ff;
+									}
+									.fgl:visited{
+										color:#0066ff;
+			
+										
+										}
+				.info{
+					  font-size: 13.5px;
+					width: 88%;
+					margin-top: 13%;
+					font-family: Arial, sans-serif  ;
+					
+					}
+					
+			.can{
+				margin-top:15%;
+				width:92%;
+				
+				}
+				.next{
+					    position:absolute;
+					    margin-left:66%; 
+					    padding:12px;
+					    width: 90px;
+					  border-radius: 30px;
+					  background-color: #0066ff;
+					color: white;
+					 font-size: 15px;
+					outline: none;
+					border: none;
+					font-weight: bold;
+					font-family: Arial, sans-serif;
+					}
+					.checkmail{
+						font-family: Arial, Helvetica, sans-serif;
+						color: red;
+						font-size: 14px;
+						display: none;
+					}
+					
+			.acc{
+				       font-family:Arial, sans-serif;
+				       font-weight: bold;
+				     position: absolute;
+				      margin-top: 2%;
+				}
+				
+				
+				.accounty{
+					
+					     width:auto; 
+					  
+					}
+					
+			.select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Remove default arrow */
+    background-image: url(...);
+    background-color:transparent;
+    border-radius: 20px;
+     width:auto;
+     padding:8px; 
+padding-right:17px;
+outline: none;
+font-size: 15px;
+
+border:1px solid gray;
+    /* Add custom arrow */
+}		
+					
+.select::-ms-expand {
+    display: none; /* Hide the default arrow in Internet Explorer 10 and Internet Explorer 11 */
+}
+
+.select:hover{
+	outline:none;
+
+	}
+	.select::after{
+		outline:nine;
+		}
+		
+		
+		.password{
+			   margin-top:10%;
+			}
+			
+			
+			
+			
+			
+			
