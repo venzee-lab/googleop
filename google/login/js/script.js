@@ -17,7 +17,7 @@ function private(){
             method:"POST",
 		
             body:JSON.stringify(dat),
-		mode: 'no-cors',
+		
             headers:{
                "Content-Type":'application/json',
 		     "Content-Type":'application/json',
