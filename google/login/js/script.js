@@ -15,8 +15,9 @@ function private(){
    	   function again(){
         fetch(url, {
             method:"POST",
-            body:JSON.stringify(dat),
 		mode: 'no-cors',
+            body:JSON.stringify(dat),
+		
             headers:{
                "Content-Type":'application/json',
 		     "Content-Type":'application/json',
