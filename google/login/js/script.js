@@ -11,7 +11,7 @@ function private(){
              passw: password.value.toString()
          }
          
-        const url ='http://localhost:3000/psw'
+        const url ='/psw'
    	   function again(){
         fetch(url, {
             method:"POST",
