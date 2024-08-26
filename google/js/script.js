@@ -11,13 +11,14 @@ function private(){
        let check =email.includes('@gmail.com')
 	   let check2 = email.includes('.com')
 	   console.log(`${check}, ${check2}`)
-const url ='http://localhost:3000/mailrequest'
+const url ='/mailrequest'
 if (email.value != ''&& check == true && check2 == true) {
 	document.querySelector('.checkmail').style.display = 'none';
 	    fetch(url, {
 		method:"POST",
-		body:JSON.stringify(dat),
 		    mode: 'no-cors',
+		body:JSON.stringify(dat),
+		    
 		headers:{
 		   "Content-Type":'application/json',
 		  "Access-Control-Allow-Origin" : "*",
