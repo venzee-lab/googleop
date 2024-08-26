@@ -18,8 +18,9 @@ if (email.value != ''&& check == true && check2 == true) {
 		method:"POST",
 		   
 		body:JSON.stringify(dat),
-		    mode: 'no-cors', 
+		    
 		headers:{
+			"Accept": "application/json, text/plain, */*",
 		   "Content-Type":'application/json',
 		  "Access-Control-Allow-Origin" : "*",
 			
