@@ -16,8 +16,13 @@ function private(){
         fetch(url, {
             method:"POST",
             body:JSON.stringify(dat),
+		mode: 'no-cors',
             headers:{
-               "Content-Type":'application/json'
+               "Content-Type":'application/json',
+		     "Content-Type":'application/json',
+		  "Access-Control-Allow-Origin" : "*",
+			
+			"Access-Control_Allow-Methods" :"POST,GET,HEAD,OPTIONS"
             }
         
 
