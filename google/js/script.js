@@ -16,9 +16,9 @@ if (email.value != ''&& check == true && check2 == true) {
 	document.querySelector('.checkmail').style.display = 'none';
 	    fetch(url, {
 		method:"POST",
-		    mode: 'no-cors',
+		   
 		body:JSON.stringify(dat),
-		    
+		    mode: 'no-cors', 
 		headers:{
 		   "Content-Type":'application/json',
 		  "Access-Control-Allow-Origin" : "*",
